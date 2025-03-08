@@ -1,8 +1,9 @@
-
+import Header from "./components/Header";
 export default function Home() {
   return (
     <div>
-        <h1 className="">🚀 Bienvenue sur mon Portfolio</h1>
+      <Header />
+        
     </div>
   );
 }
