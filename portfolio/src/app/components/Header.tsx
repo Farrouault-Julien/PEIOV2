@@ -11,8 +11,7 @@ export default function Header() {
   return (
     <header>
       <div className="logo">
-        {/* Remplacez '/logo.png' par le chemin de votre logo si nécessaire */}
-        <img src="/logo.png" alt="Logo" />
+        <img src="/logo.svg" alt="Logo" />
       </div>
       <nav className="desktop-nav">
         <ul>
