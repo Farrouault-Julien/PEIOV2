@@ -1,8 +1,7 @@
-
 export default function Home() {
   return (
     <div>
-      hello
+      <h1>🚀 Bienvenue sur mon Portfolio</h1>
     </div>
   );
 }
