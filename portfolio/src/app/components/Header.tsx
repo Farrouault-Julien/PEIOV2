@@ -44,7 +44,7 @@ export default function Header() {
           background-color: white;
         }
         .logo img {
-          height: 40px;
+          width : 100px;
         }
         nav.desktop-nav ul {
           display: flex;
