@@ -6,9 +6,11 @@ export default function HomeEtiquette() {
     <div className="home-etiquette">
       {/* Partie supérieure : logo + titre */}
       <div className="header">
-        <div className="logo">
-          <img src="/logo.svg" alt="Logo" />
-        </div>
+      <img
+            src="/logo.png"
+            alt="Logo"
+            className="logo_img"
+          />
       </div>
 
       {/* Liens de navigation */}
@@ -53,8 +55,9 @@ export default function HomeEtiquette() {
           gap: 0.5rem;
         }
 
-        .logo img {
-          height: 100px; /* Ajustez selon votre préférence */
+        .logo_img {
+            width: 200px;
+            height: auto;
         }
 
         .title {

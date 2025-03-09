@@ -39,7 +39,7 @@ export default function Header() {
       <style jsx>{`
         header {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
           align-items: center;
           padding: 1rem;
         }
