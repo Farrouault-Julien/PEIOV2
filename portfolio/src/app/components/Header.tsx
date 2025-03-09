@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Header() {
@@ -15,9 +16,9 @@ export default function Header() {
       </div>
       <nav className="desktop-nav">
         <ul>
-          <li>About</li>
-          <li>Works</li>
-          <li>Say Hi</li>
+          <Link href="/about"><li>About</li></Link>
+          <Link href="/works"><li>Works</li></Link>
+          <Link href="/contact"><li>Say Hi</li></Link>
         </ul>
       </nav>
       <div className="mobile-menu-button" onClick={toggleMobileMenu}>
@@ -28,9 +29,9 @@ export default function Header() {
         <div className="mobile-menu-overlay">
           <button className="close-button" onClick={toggleMobileMenu}>X</button>
           <ul>
-            <li>About</li>
-            <li>Works</li>
-            <li>Say Hi</li>
+          <Link href="/about"><li>About</li></Link>
+          <Link href="/works"><li>Works</li></Link>
+          <Link href="/contact"><li>Say Hi</li></Link>
           </ul>
         </div>
       )}
@@ -41,7 +42,6 @@ export default function Header() {
           justify-content: space-between;
           align-items: center;
           padding: 1rem;
-          background-color: white;
         }
         .logo img {
           width : 100px;
