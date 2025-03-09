@@ -14,11 +14,11 @@ export default function HomeEtiquette() {
       </div>
 
       {/* Liens de navigation */}
-      <nav>
+      <nav className="links">
         <ul>
-          <li><Link href="/works">works</Link></li>
-          <li><Link href="/about">about</Link></li>
-          <li><Link href="/contact">say hi</Link></li>
+          <li><Link legacyBehavior href="/works"><a className="link">works</a></Link></li>
+          <li><Link legacyBehavior href="/about"><a className="link">about</a></Link></li>
+          <li><Link legacyBehavior href="/contact"><a className="link">say hi</a></Link></li>
         </ul>
       </nav>
 
@@ -38,7 +38,7 @@ export default function HomeEtiquette() {
           top: 1rem;
           left: 1rem;
           width: 25%;
-          height :50% ;
+          height :45% ;
           background-color: #fff;
           border: 1px solid #000;
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -60,10 +60,8 @@ export default function HomeEtiquette() {
             height: auto;
         }
 
-        .title {
-          margin: 0;
-          font-size: 1.2rem;
-          font-weight: 600;
+        .links {
+            text-decoration : none;
         }
 
         nav ul {
@@ -76,8 +74,17 @@ export default function HomeEtiquette() {
         }
 
         nav ul li {
-          font-size: 1rem;
+          font-size: 1.5rem;
         }
+
+        .link {
+            text-decoration:none;
+        }
+
+        .link:visited {
+            color : black
+        }
+        
 
         .tags {
           display: flex;
@@ -91,11 +98,11 @@ export default function HomeEtiquette() {
         }
 
         .graphic {
-          background-color: #d8cef6; /* Violet pâle, modifiez selon vos goûts */
+          background-color: #d8cef6;
         }
 
         .typography {
-          background-color: #cff6bd; /* Vert pâle, modifiez selon vos goûts */
+          background-color: #cff6bd;
         }
       `}</style>
     </div>
